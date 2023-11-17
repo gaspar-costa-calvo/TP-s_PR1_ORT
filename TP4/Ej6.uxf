@@ -1,0 +1,59 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>54</x><y>207</y><w>198</w><h>144</h></coordinates><panel_attributes>Frigorifico
+--
+_-CANTIDAD_VENDEDORES: int = 20_
+--
++informarCantPedidos(): void
++clientesPorPais(): int []
++paisMasRentable(): String
+-cantidadPedidosPorPais():int [][]
+-busarClientePorCuit(String):Cliente
+-montoPorPais(): double []</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>459</x><y>576</y><w>189</w><h>108</h></coordinates><panel_attributes>Pedido
+--
+-idVendedor: int
+-cuitCliente: String
+-
++getPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>468</x><y>189</y><w>189</w><h>117</h></coordinates><panel_attributes>Producto
+--
+-codigo: String
+-nombre: String
+-precio: double
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>63</x><y>459</y><w>189</w><h>108</h></coordinates><panel_attributes>Cliente
+--
+-CUIT: String
+-razonSocial: String
+-telefono: String
+--
++posicionDelPais(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>45</x><y>0</y><w>189</w><h>90</h></coordinates><panel_attributes>Vendedor
+--
+-ID: int
+-nombre: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>81</x><y>648</y><w>153</w><h>153</h></coordinates><panel_attributes>Pais
+&lt;&lt;Enum&gt;&gt;
+--
++ARGENTINA ("Argentina")
++CHILE ("Chile")
++URUGUAY ("Uruguay")
++BRASIL ("Brasil")
+--
++getNombre(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>81</y><w>135</w><h>144</h></coordinates><panel_attributes>lt=&lt;-
+m1=[CANT_VENDEDORES]
+-vendedores</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>243</x><y>216</y><w>243</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-productos</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>144</x><y>342</y><w>72</w><h>135</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-clientes</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>243</x><y>279</y><w>234</w><h>396</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-pedidos</panel_attributes><additional_attributes>240;410;120;410;120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>558</y><w>54</w><h>108</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-pais</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>459</x><y>396</y><w>189</w><h>108</h></coordinates><panel_attributes>Item
+--
+-cantidad:int
+-
++getPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>531</x><y>495</y><w>54</w><h>99</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-items</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>297</y><w>72</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-producto</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element></diagram>

@@ -1,0 +1,19 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>209</x><y>88</y><w>264</w><h>165</h></coordinates><panel_attributes>Droide
+--
+- droidesRegistrados: ArrayList&lt;Droide&gt;
+- isEnServicio: boolean
+--
++ autoRepararse(): EstadoDroide
++ agregrarDroide(Droide): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>374</y><w>231</w><h>209</h></coordinates><panel_attributes>Pieza
+--
+- isOperativa: boolean
+- nombre: String
+--
++ isOperativa(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>319</x><y>242</y><w>77</w><h>154</h></coordinates><panel_attributes>lt=&lt;-
+m1= (1,n)
+- piezas</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>605</x><y>132</y><w>209</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+EstadoDroide
+--
+_+ REPARACION_IMPOSIBLE_
+_+ COMPLETAMENTE_OPERATIVO_
+_+ REPARACION_PARCIAL_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>462</x><y>176</y><w>165</w><h>33</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element></diagram>

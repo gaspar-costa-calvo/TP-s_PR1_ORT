@@ -1,0 +1,29 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>330</x><y>22</y><w>187</w><h>154</h></coordinates><panel_attributes>Inmueble
+--
+-domicilio:String
+-superficie:int
+-cantidadAmbiente:int
+-precio:double
+--
++setPrecio(double):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>473</x><y>429</y><w>231</w><h>154</h></coordinates><panel_attributes>Inmobiliaria
+--
+-nombre:String
+-email:String
+-porcentajeComisionVenta:double
+--
++notificar(String):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>429</y><w>165</w><h>154</h></coordinates><panel_attributes>Persona
+--
+-nombre:String
+-email:String
+-apellido:String
+-telefono:String
+
+-
++notificar(String):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>506</x><y>88</y><w>198</w><h>363</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-inmuebles</panel_attributes><additional_attributes>10;10;100;10;100;310</additional_attributes></element><element><id>UMLClass</id><coordinates><x>341</x><y>275</y><w>165</w><h>77</h></coordinates><panel_attributes>&lt;&lt;Inteface&gt;&gt;
+/Cliente/
+--
+/+notificar(String):void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>418</x><y>165</y><w>110</w><h>132</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+- interesados</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>341</y><w>143</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;20;40;110;80</additional_attributes></element><element><id>Relation</id><coordinates><x>286</x><y>341</y><w>143</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>110;10;100;40;10;80</additional_attributes></element></diagram>
