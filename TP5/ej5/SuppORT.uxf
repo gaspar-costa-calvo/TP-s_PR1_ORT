@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>99</x><y>117</y><w>243</w><h>117</h></coordinates><panel_attributes>SuppORT
+-
+-
+
+- eliminarTicket(int): Ticket
+- cantTicketsXSectorPrioridad(Prioridad): int[]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>513</x><y>126</y><w>153</w><h>135</h></coordinates><panel_attributes>ColaTickets</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>567</x><y>333</y><w>135</w><h>135</h></coordinates><panel_attributes>Ticket
+-
+- id: int 
+- fecha: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>333</x><y>342</y><w>90</w><h>126</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Sector
+-
+_+ RRHH_
+_+ INSTITUTO_
+_+ ESCUELA_
+_+ DIRECCION_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>387</y><w>171</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- sectorReclamo</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>333</x><y>495</y><w>90</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Prioridad
+-
+_+ ALTA	_
+_+ MEDIA_
+_+ BAJA_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>423</y><w>171</w><h>135</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- prioridad</panel_attributes><additional_attributes>10;120;80;120;80;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>153</y><w>198</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- colaTicketsNoResueltos</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>657</x><y>180</y><w>45</w><h>171</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>30;170;30;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>198</y><w>288</w><h>153</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>300;150;300;110;30;110;30;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>144</y><w>333</w><h>441</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;470;350;470;350;10;280;10</additional_attributes></element><element><id>Relation</id><coordinates><x>243</x><y>225</y><w>108</w><h>180</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>100;180;10;180;10;10</additional_attributes></element></diagram>
