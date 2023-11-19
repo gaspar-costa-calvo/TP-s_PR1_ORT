@@ -1,0 +1,28 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>133</x><y>427</y><w>84</w><h>63</h></coordinates><panel_attributes>Factura
+-
+- codigoBarra: double
+- nroMes: int
+- monto: double
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>112</x><y>168</y><w>154</w><h>63</h></coordinates><panel_attributes>EdificioInteligente
+-
+-
++ catalogar(PilaFacturas): void
++ montoAAbonarPorTipo(): double[]</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>224</y><w>133</w><h>77</h></coordinates><panel_attributes>lt=&lt;-
+m1=[TipoFactura.values().length]
+- archivoDeFacturas</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>133</x><y>287</y><w>84</w><h>63</h></coordinates><panel_attributes>ColaFacturas
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>343</y><w>21</w><h>98</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>427</y><w>63</w><h>77</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoFactura
+-
+_+ LUZ_
+_+ GAS_
+_+ INTERNET_
+_+ ABL_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>448</y><w>84</w><h>35</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- tipoFactura</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>42</x><y>196</y><w>84</w><h>105</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;130;10;10;100;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>7</x><y>287</y><w>84</w><h>63</h></coordinates><panel_attributes>PilaFacturas
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>42</x><y>343</y><w>105</w><h>133</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>130;170;10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>231</x><y>224</y><w>91</w><h>217</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>110;290;110;250;10;250;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>315</x><y>287</y><w>161</w><h>63</h></coordinates><panel_attributes>ListaFacturasXMes
+-
+- compare(Factura, Factura): int
+- compareByKey(Double, Factura): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>343</y><w>238</w><h>203</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;210;10;270;320;270;320;10</additional_attributes></element><element><id>Relation</id><coordinates><x>259</x><y>196</y><w>147</w><h>105</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>190;130;190;10;10;10</additional_attributes></element></diagram>
